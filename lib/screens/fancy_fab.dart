@@ -21,12 +21,9 @@ class _FancyFabState extends State<FancyFab>
   Animation<double> scale;
   Curve _curve = Curves.easeOut;
   bool isFloatingButtonPressed = false;
-  Map<int,String> images = Map<int,String>();
 
   @override
   initState() {
-    images = {
-    };
     _animationController =
     AnimationController(vsync: this, duration: Duration(milliseconds: 300))
       ..addListener(() {
